@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1000px) {
+    .sideimg {
+        display: none;
+    }
+
+    .frmstyle {
+        display: block;
+        gap: 1px;
+        text-align: center;
+        position: relative;
+        align-items: center;
+    }
+    #inputlg{
+        width: 400px;
+    }
+}
+/* @media only screen and (max-height: 1198px) {
+    
+    #inputlg{
+        width: 350px;
+    }
+} */
+
