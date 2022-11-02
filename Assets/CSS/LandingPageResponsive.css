@@ -1,0 +1,109 @@
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: row;
+
+    }
+    
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .about_img {
+        float: left;
+        position: relative;
+        top: 70px;
+        left: 0;
+        width: 50%;
+    }
+    .about_img1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+      
+      }
+      
+      .about_img2 {
+        position: absolute;
+        top: 20px;
+        left: 320px;
+        width: 20%;
+      
+      }
+      
+      .about_img3 {
+        position: absolute;
+        top: 10px;
+        left: 340px;
+        width: 20%;
+      }
+      .about_corner_img{
+        position: relative;
+        bottom: 440px;
+        left: 850px;
+        
+      }
+}
+
+
+@media only screen and (max-width: 990px) {
+
+    .about_img {
+        float: left;
+        position: relative;
+        top: 200px;
+        left: 0;
+        width: 50%;
+    }
+      
+      .about_img2 {
+        position: absolute;
+        top: 20px;
+        left: 240px;
+        width: 20%;
+      
+      }
+      
+      .about_img3 {
+        position: absolute;
+        top: 10px;
+        left: 260px;
+        width: 20%;
+      }
+      .about_corner_img{
+        display: none   ;
+        
+      }
+}
+@media only screen and (max-width: 760px) {
+
+.about_text {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding-top: 6rem;
+    padding-left: 50px;
+  }
+  .about_text2 {
+    font-size: x-large;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+  }
+  .about_img2 {
+    position: absolute;
+    top: 20px;
+    left: 190px;
+    width: 20%;
+  
+  }
+  
+  .about_img3 {
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    width: 20%;
+  }
+}
