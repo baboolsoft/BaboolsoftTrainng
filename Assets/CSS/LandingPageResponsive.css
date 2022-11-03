@@ -44,6 +44,26 @@
         left: 850px;
         
       }
+      .mapcard{
+        left:0;
+        top:8;
+        grid-gap: 20px;
+      }
+      .card_video{
+        margin-left: 0;
+        right: 400;
+        height: 230px;
+        width: 400px;
+      }
+      .spread{
+        height: 100vh;
+      }
+      .card_act{
+        padding: 3px;
+      }
+      .lockdown{
+        height: 300px;
+      }
 }
 
 
