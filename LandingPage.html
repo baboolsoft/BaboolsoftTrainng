@@ -11,38 +11,96 @@
 </head>
 
 <body class="main">
+  <div class="fab-container">
+    <div class="button iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="red" class="bi bi-arrow-up-circle-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
   <!--.......NavBar.......-->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <div class="navbar-header">
         <img src="img/logo/logo-black.png" class="navbar-brand" />
       </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#spread">Spread</a></li>
-        <li><a href="#symptoms">Symptoms</a></li>
-        <li><a href="#prevention">Prevention</a></li>
-        <li><a href="#patient">Patient Says</a></li>
-        <li><a href="#footer">Contact</a></li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#spread">Spread</a></li>
+          <li><a href="#symptoms">Symptoms</a></li>
+          <li><a href="#prevention">Prevention</a></li>
+          <li><a href="#patient">Patient Says</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!--.......Home.......-->
-  <div class="home col-lg" id="home">
-    <div class="carousel-item active">
-      <img src="/img/b1.jpg" alt="Images" class="home_image" />
-      <div class="carousel-captions">
-        <p class="img_text1">Covid-19</p>
-        <h1 class="img_text2">Protect From CoronoVirus</h1>
-        <p class="img_text3">
-          The Integration of web fonts has always been one of the
-          largest contributing factors to<br>
-          diversity in the overall look and feet of websites today vs. yesterday.
-        </p>
-        <input type="button" class="btn btn-danger" id="contact" value="Contact Now">
+  <div class="home" id="home">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-pause=hover data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/b1.jpg" alt="Images" class="home_image d-block w-100" />
+          <div class="carousel-captions">
+            <p class="img_text1">Covid-19</p>
+            <h1 class="img_text2">Protect From CoronoVirus</h1>
+            <p class="img_text3">
+              The Integration of web fonts has always been one of the
+              largest contributing factors to<br>
+              diversity in the overall look and feet of websites today vs. yesterday.
+            </p>
+            <input type="button" class="btn btn-danger" id="contact" value="Contact Now">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/b3.jpg" alt="Images" class="home_image" />
+          <div class="carousel-captions">
+            <p class="img_text1">Covid-19</p>
+            <h1 class="img_text2">Health Care for Coronavirus</h1>
+            <p class="img_text3">
+              The Integration of web fonts has always been one of the
+              largest contributing factors to<br>
+              diversity in the overall look and feet of websites today vs. yesterday.
+            </p>
+            <input type="button" class="btn btn-danger" id="contact" value="Contact Now">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/b4.jpg" alt="Images" class="home_image" />
+          <div class="carousel-captions">
+            <p class="img_text1">Covid-19</p>
+            <h1 class="img_text2">190 Countries People are Worried</h1>
+            <p class="img_text3">
+              The Integration of web fonts has always been one of the
+              largest contributing factors to<br>
+              diversity in the overall look and feet of websites today vs. yesterday.
+            </p>
+            <input type="button" class="btn btn-danger" id="contact" value="Contact Now">
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 
@@ -125,6 +183,13 @@
             </svg>
             <h5>Unhygienic Place</h5>
           </div>
+          <div class="overlay">
+            <div class="text">
+              <h3>Unhygienic place</h3>
+              <p>These cases are prefectely ease and <br>simple to distingush
+                in a free hour power. </p>
+            </div>
+          </div>
         </div>
         <div class="card1">
           <img src="img/spread/2.jpg" alt="Images" class="home_image" />
@@ -139,6 +204,13 @@
             <h5>Human Contact</h5>
 
           </div>
+          <div class="overlay">
+            <div class="text">
+              <h3>Unhygienic place</h3>
+              <p>These cases are prefectely ease and <br>simple to distingush
+                in a free hour power. </p>
+            </div>
+          </div>
         </div>
         <div class="card1">
           <img src="img/spread/10.jpg" alt="Images" class="home_image" />
@@ -151,6 +223,13 @@
             </svg>
             <h5>Air Transmission</h5>
 
+          </div>
+          <div class="overlay">
+            <div class="text">
+              <h3>Unhygienic place</h3>
+              <p>These cases are prefectely ease and <br>simple to distingush
+                in a free hour power. </p>
+            </div>
           </div>
         </div>
         <div class="card1">
@@ -165,6 +244,13 @@
             </svg>
             <h5>Breathing Eye</h5>
 
+          </div>
+          <div class="overlay">
+            <div class="text">
+              <h3>Unhygienic place</h3>
+              <p>These cases are prefectely ease and <br>simple to distingush
+                in a free hour power. </p>
+            </div>
           </div>
         </div>
         <div class="card1">
@@ -182,6 +268,13 @@
             <h5>Contaminated Objects</h5>
 
           </div>
+          <div class="overlay">
+            <div class="text">
+              <h3>Unhygienic place</h3>
+              <p>These cases are prefectely ease and <br>simple to distingush
+                in a free hour power. </p>
+            </div>
+          </div>
         </div>
         <div class="card1">
           <img src="img/spread/4.jpg" alt="Images" class="home_image" />
@@ -195,6 +288,13 @@
             </svg>
             </svg>
             <h5>Crowed People</h5>
+          </div>
+          <div class="overlay">
+            <div class="text">
+              <h3>Unhygienic place</h3>
+              <p>These cases are prefectely ease and <br>simple to distingush
+                in a free hour power. </p>
+            </div>
           </div>
         </div>
       </div>
@@ -238,16 +338,19 @@
       </div>
 
     </div>
+
     <div class="card_video">
-      <img src="/img/a.jpg" width="100%" height="100%" style="position: absolute;bottom: 100;" />
+      <img src="/img/a.jpg" width="100%" height="100%" style="position: absolute;bottom: 100; width: 546px;" />
+      <img src="img/you.png" class="youtube" />
     </div>
+
   </div>
 
   <!--......Prevention......-->
   <div class="prevention" id="prevention">
     <img src="/img/banner-2.jpg" width="100%" height="100%" class="home_image" />
-    <div class="content">
-      <div class="prev-left">
+    <div class="row content">
+      <div class="col-6 prev-left">
         <p class="t1">Ask Your Question?</p>
         <div class="accordion accordion-flush">
           <div class="accordion-item">
@@ -294,7 +397,7 @@
           </div>
         </div>
       </div>
-      <div class="prev-right">
+      <div class="col-6 prev-right">
         <p class="t1">Lockdown Your Area?</p>
         <img src="img/b5.png" class="lockdown" />
       </div>
@@ -310,18 +413,54 @@
       <p class="spread_text3">Rearrange the entire coor in the world, to make a unquire and perfect<br>
         beautifull color for the Earth.</p>
     </div>
-    <div class="double">
-      <img src="img/double1.png" width="49px" />
-    </div>
-    <p class="spread_text3" style="padding-top: 60px;">The majority of space is relatively empty, with
-      of dust and gas floating around.<br> This means that when humans send a
-      probe to a distant planet or asteroid,<br> the craft will not encounter
-      "drag"in the same way </p>
-    <div class="double">
-      <img src="img/booking_call.png" width="109px" />
-      <h4>Dr.Amy Adams</h4>
-      <p class="card-text" style="color:red;">Corona Specialist</p>
-      <div class="carousel-indicators" style="color:black;">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="double">
+            <img src="img/double1.png" width="49px" />
+          </div>
+          <p class="spread_text3" style="padding-top: 60px;">The majority of space is relatively empty, with
+            of dust and gas floating around.<br> This means that when humans send a
+            probe to a distant planet or asteroid,<br> the craft will not encounter
+            "drag"in the same way </p>
+          <img src="img/booking_call.png" width="109px" class="double" />
+
+          <h4>Dr.Amy Adams</h4>
+          <p class="card-text" style="color:red;">Corona Specialist</p>
+
+        </div>
+        <div class="carousel-item">
+          <div class="double">
+            <img src="img/double1.png" width="49px" />
+          </div>
+          <p class="spread_text3" style="padding-top: 60px;">The majority of space is relatively empty, with
+            of dust and gas floating around.<br> This means that when humans send a
+            probe to a distant planet or asteroid,<br> the craft will not encounter
+            "drag"in the same way </p>
+          <img src="img/booking_call.png" width="109px" class="double" />
+
+          <h4>Dr.Amy Adams</h4>
+          <p class="card-text" style="color:red;">Corona Specialist</p>
+
+        </div>
+        <div class="carousel-item">
+          <div class="double">
+            <img src="img/double1.png" width="49px" />
+          </div>
+          <p class="spread_text3" style="padding-top: 60px;">The majority of space is relatively empty, with
+            of dust and gas floating around.<br> This means that when humans send a
+            probe to a distant planet or asteroid,<br> the craft will not encounter
+            "drag"in the same way </p>
+          <img src="img/booking_call.png" width="109px" class="double" />
+
+          <h4>Dr.Amy Adams</h4>
+          <p class="card-text" style="color:red;">Corona Specialist</p>
+
+        </div>
+      </div>
+      <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -329,14 +468,16 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
       </div>
+
     </div>
   </div>
 
   <!--Footer-->
   <div class="footer" id="footer">
-    <img src="img/001.png" width="100%" height="100%" />
-    <div class="row ss">
-      <div class="col-lg-3 inform">
+    <img src="img/001.png" width="100%" height="40%" />
+    <div class="row ss ">
+
+      <div class=" col-4 inform">
         <div>
           <b>Information</b>
           <p>
@@ -370,39 +511,35 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 contact">
-        <div>
-          <b>Contact Us</b>
+      <div class="col-4">
+        <b>Contact Us</b>
+        <div class="contact">
           <ul>
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#spread">Spread</a></li>
             <li><a href="#symptoms">Symptoms</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-3 contact1">
-        <div>
-          <ol>
             <li><a href="#prevention">Prevention</a></li>
             <li><a href="#patient">Patient Says</a></li>
             <li><a href="#footer">Contact</a></li>
-          </ol>
-
+          </ul>
         </div>
       </div>
-      <div class="col-lg-3 ima">
-        <div>
-          <h5>More Relevent</h5>
+      <div class="col-4">
+        <h5>More Relevent</h5>
+        <div class="ima">
+
           <img src="img/team-1.jpg" height="60px" width="60px" />
-          How to improve
-          Your Sales Volume<br>
-          <img src="img/team-1.jpg" height="60px" width="60px" style="padding-top:10px" />
-          How to improve
-          Your Sales Volume
+          <p>How to improve <br> Your Sales Volume</p>
+          <img src="img/team-2.jpg" height="60px" width="60px" />
+          <p>How to improve <br> Your Sales Volume</p>
         </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©2020 by ThemexHunter. All Rights Reserved</p>
       </div>
     </div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
