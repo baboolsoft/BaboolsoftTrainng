@@ -1,0 +1,38 @@
+@keyframes slideUp {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    
+    }
+  }
+  .slideUp {
+    animation-name: slideUp;
+    animation-duration: 2s;
+    /* animation-timing-function: ease-in;
+    animation: slideUp 0.5s forwards; */
+    animation-delay: 2s;
+    animation: slideUp ease-in 1.5s forwards 1.2s;
+  }
+  .img_text1{
+    animation-delay: 150ms;
+    animation-fill-mode: both;
+  }
+  .img_text2{
+    animation-delay: 360ms;
+    animation-fill-mode: both;
+  }
+  .img_text3{
+    animation-delay: 570ms;
+    animation-fill-mode: both;
+  }
+  #contact{
+    animation-delay: 780ms;
+    animation-fill-mode: both;
+  }
