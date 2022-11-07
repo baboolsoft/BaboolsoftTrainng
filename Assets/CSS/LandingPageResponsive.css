@@ -1,176 +1,185 @@
-@media only screen and (max-width: 1000px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: flex-end;
-
-  }
-
-
-
-}
-
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1267px) {
   .carousel-captions{
-    top:400;
+    padding-bottom: 9.25rem;
+  }
   }
   
-  .about_img {
-    position: relative;
-    height: 80vh;
-  }
-
-  .about_img1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-  }
-
-  .about_img2 {
-    position: absolute;
-    top: 20px;
-    left: 320px;
-    width: 20%;
-
-  }
-
-  .about_img3 {
-    position: absolute;
-    top: 10px;
-    left: 340px;
-    width: 20%;
-  }
-
-  .about_corner_img {
-    position: relative;
-    bottom: 440px;
-    left: 850px;
-
-  }
-
-  .mapcard {
-    left: 0;
-    top: 38;
-  }
-
+@media only screen and (max-width: 1320px) {
   .card_video {
-    margin-left: 369px;
-    height: 230px;
-    width: 416px;
-  }
-  /* .card_video img{
-    position: absolute;
-    bottom: 197px;
-    width: 95px;
-    height: 93px;
-  } */
-  .youtube{
-    position: absolute;
-    z-index: 1;
-    width: 100;
-    bottom: 201px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -286px;
   }
 
-  .spread {
-    height: 100vh;
+  .youtube-img {
+    position: absolute;
+    width: 423px;
+  }
+
+  .youtube {
+    position: absolute;
+    width: 61px;
+    display: flex;
+    top: 110px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .card_video {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -216px;
+}
+  .youtube-img {
+    position: absolute;
+    width: 309px;
+}
+  .youtube {
+    position: absolute;
+    width: 46px;
+    display: flex;
+    top: 77px;
+}
+.about_img{
+  display: flex;
+  justify-content: center;
+}
+.about_img1{
+  width: 60%;
+
+}
+}
+
+@media only screen and (max-width: 860px) {
+  .card_video {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -188px;
+  }
+
+  .youtube-img {
+    position: absolute;
+    width: 300;
+  }
+
+  .youtube {
+    position: absolute;
+    width: 56px;
+    display: flex;
+    top: 78px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .img_text2{
+    font-size: 40px;
+  }
+  .mapcard {
+    /* width: 0; */
+    /* grid-template-columns: 1fr 1fr; */
+    top: 25px;
   }
 
   .card_act {
-    padding: 3px;
+    padding: 10;
   }
 
-  .lockdown {
-    height: 300px;
-  }
-  .patient{
-    height:55vh;
-  }
-}
-
-
-@media only screen and (max-width: 990px) {
-  
-  .card_video{
-    margin-left: 209px;
-
+  .card_img1 {
+    padding-right: 5px;
+    height: 30;
   }
 
-  .about_img {
-    float: left;
-    position: relative;
-  }
-
-  .about_img2 {
-    position: absolute;
-    top: 20px;
-    left: 240px;
-    width: 20%;
-
-  }
-
-  .about_img3 {
-    position: absolute;
-    top: 10px;
-    left: 260px;
-    width: 20%;
-  }
-
-  .about_corner_img {
-    display: none;
-
-  }
-}
-
-@media only screen and (max-width: 789px) {
-  .about{
-    height: 60vh;
-  }
-  .centered svg{
-    width: 26;
-    
-  }
-  .centered h5 h3{
-    font-size: small;
-  }
-  .text h3{
-    font-size: small;
-  }
-  .text{
+  .gallerycard h5 {
     font-size: 10px;
   }
-  .about_text {
-    float: right;
-    width: 50%;
-    height: 100%;
-    padding-top: 6rem;
-    padding-left: 50px;
+
+  .centered svg {
+    width: 23px;
   }
 
-  .about_text2 {
-    font-size: x-large;
-    font-weight: 800;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    word-spacing: 4px;
-    letter-spacing: 4px;
+  .text {
+    font-size: 8px;
   }
 
-  .about_img2 {
+  .text h3 {
+    font-size: 15px;
+  }
+
+  .card_body {
+    font-size: 10px;
+  }
+  .prevention{
+    height: 70vh;
+  }
+  .content{
+    padding: 0px;
+    top:18px;
+  }
+  .accordion-body{
+    font-size: 12px;
+  }
+  .says{
+    font-size: 12px;
+  }
+  .contact ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .inform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright {
+    padding: 2;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 20px;
-    left: 190px;
-    width: 20%;
-
-  }
-
-  .about_img3 {
-    position: absolute;
-    top: 10px;
-    left: 210px;
-    width: 20%;
-  }
+    bottom: -120px;
+}
 }
 
-@media only screen and (max-width: 762px) {
-  
+@media only screen and (max-width: 640px) {
+  .card_video {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -121px;
+  }
+
+  .youtube-img {
+    position: absolute;
+    width: 215px;
+  }
+
+  .youtube {
+    position: absolute;
+    width: 42px;
+    display: flex;
+    top: 57px;
+  }
+  .lockdown{
+    width: 182px;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .card_act {
+    padding: 0;
+  }
 }

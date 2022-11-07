@@ -1,18 +1,34 @@
 /* Body */
+/* width */
+::-webkit-scrollbar {
+  width: 18px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: rgb(18, 191, 32);
+  }
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(18, 143, 29);
+  }
 body{
-  width: 100%;
-  height: auto;
+  font-family: 'Nunito', sans-serif;
+  background-attachment: fixed;
+  scrollbar-color: rebeccapurple green;
+  
 }
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 .main {
   overflow-x: hidden;
   position: relative;
   min-width: 100%;
+  
 }
 
 /* .........Header(NavBar)........ */
@@ -50,7 +66,7 @@ li a:hover {
 }
 
 .navbar-nav {
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .fab-container {
@@ -66,12 +82,10 @@ li a:hover {
 
 .home {
   max-width: 100%;
-  height: 100vh;
 }
 
 .home_image {
   filter: brightness(0.6);
-  height: 100%;
   width: 100%;
 }
 
@@ -126,25 +140,18 @@ li a:hover {
 /* .........About Page........ */
 .about {
   width: 100%;
-  height: 80vh;
+  /* height: 80vh; */
 
 }
 
 .about_img {
-  float: left;
   position: relative;
-  top: 20px;
-  left: 0;
-  width: 50%;
 }
 
 .about_img1 {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: -webkit-fill-available;
  
-
 }
 
 .about_img2 {
@@ -160,8 +167,6 @@ li a:hover {
 }
 
 .about_text {
-  float: right;
-  width: 50%;
   padding-top: 5rem;
   padding-left: 50px;
 }
@@ -175,15 +180,10 @@ li a:hover {
 .about_text2 {
   font-size: xx-large;
   font-weight: 800;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  word-spacing: 4px;
-  letter-spacing: 4px;
 }
 
 .about_text3 {
   font-size: 16px;
-  font-family: initial;
-  letter-spacing: 1;
   line-height: 2;
 }
 
@@ -202,15 +202,13 @@ li a:hover {
 
 /* .........Spread........ */
 .spread {
-  width: 100%;
-  height: 165vh;
+  height: auto;
   background-color: rgb(178 230 247 / 35%);
   text-align: center;
 }
 
 .spread_text {
   padding-top: 3rem;
-  padding-left: 50px;
   text-align: center;
 }
 
@@ -223,15 +221,10 @@ li a:hover {
 .spread_text2 {
   font-size: xx-large;
   font-weight: 800;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  word-spacing: 4px;
-  letter-spacing: 4px;
 }
 
 .spread-text3 {
   font-size: 16px;
-  font-family: initial;
-  letter-spacing: 1;
   line-height: 2;
 }
 
@@ -292,13 +285,10 @@ li a:hover {
 
 .map {
   position: relative;
-  /* height: 100%;
-  display: flex; */
 }
 
 .map1 {
   width: 100%;
-  height: 29%;
 }
 
 
@@ -328,8 +318,6 @@ li a:hover {
 }
 
 .card_rec {
-  height: 130px;
-  width: 240px;
   top: 20%;
   left: 10%;
   transform: translate(-50%, -50%);
@@ -339,9 +327,6 @@ li a:hover {
 }
 
 .card_dec {
-  /* position: absolute; */
-  height: 130px;
-  width: 240px;
   top: 20%;
   left: 10%;
   transform: translate(-50%, -50%);
@@ -361,11 +346,9 @@ li a:hover {
 
 .card-body {
   display: flex;
-  /* gap: 0; */
-  /* padding: 22px; */
-  align-items: flex-start;
-  padding-left: 20px;
-  flex-direction: column
+  align-items: center;
+  padding-left: 17px;
+  flex-direction: column;
 }
 
 .card-text {
@@ -374,18 +357,20 @@ li a:hover {
 }
 
 .card_video {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: -417px;
+}
+.youtube-img{
   position: absolute;
-    height: 18vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .youtube {
   position: absolute;
-  z-index: 1;
   width: 100;
-  bottom: 170;
+  display: flex;
+  top: 169px;
 }
 
 .youtube:hover {
@@ -397,16 +382,17 @@ li a:hover {
 /* ..........Prevention.......... */
 .prevention {
   width: 100%;
-  height: 70vh;
   text-align: center;
   position: relative;
+  margin-top: 4px;
+  overflow: hidden;
 }
 
 .content {
   position: absolute;
   width: 100%;
-  top: 0;
-  padding: 30px;
+  top: 123px;
+  padding: 47px
 }
 
 .prev-left {
@@ -422,9 +408,8 @@ li a:hover {
 }
 
 .lockdown {
-
-  height: 400px;
-
+  width: inherit;
+  height: -webkit-fill-available;
 }
 
 .t1 {
@@ -444,7 +429,6 @@ li a:hover {
 /*.....Patient....*/
 .patient {
   width: 100%;
-  height: 70vh;
   text-align: center;
 }
 
@@ -482,8 +466,8 @@ li a:hover {
   position: relative;
   display: flex;
   justify-items: center;
-  height: 30%;
   width: 100%;
+  height: 60vh;
 }
 
 .ss {
@@ -495,19 +479,24 @@ li a:hover {
 
 .inform {
   display: flex;
-  justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2;
 }
 
 .contact ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 2;
 }
 
 .ima {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: fit-content;
-  justify-items: center
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    justify-items: center;
+    line-height: 2;
+    align-items: center;
 }
 
 .social {
@@ -517,7 +506,7 @@ li a:hover {
   cursor: pointer;
 }
 .copyright{
-  height: 60px;
+  padding: 2;
   width: 100%;
   background-color: black;
   color: #fff;
